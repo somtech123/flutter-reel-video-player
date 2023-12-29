@@ -64,7 +64,7 @@ class _VideoFeedScreenState extends State<VideoFeedScreen> {
       onVisibilityChanged: (visibility) {
         if (visibility.visibleFraction == 0 && this.mounted) {
           _flickManager!.flickControlManager?.autoPause();
-          debugPrint('nit');
+          debugPrint('not playing');
         } else if (visibility.visibleFraction == 1) {
           _flickManager!.flickControlManager?.autoResume();
           debugPrint('playing');
